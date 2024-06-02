@@ -18,18 +18,51 @@
         font-size: 20px;
         flex-grow: 10;
         font-weight: 400;
+        list-style-type: none;
+        text-decoration: none;
+
+
+    }
+    h1:hover{
+        font-weight: 700;
+        font-size: 60px;
+        color: rgba(248, 248, 248, 0.89);
+        text-shadow: 5px 3px 5px rgb(16, 16, 16);
 
     }
     h2{
         font-size: 30px;
+    }
+    h2:hover{
+        font-size: 35px;
+        font-weight: 800;
+        text-shadow: 5px 3px 5px rgb(148, 7, 7);
+    }
+    p:hover{
+        font-weight: 600;
+    }
+    a{
+        list-style-type: none;
+        text-decoration: none;
+        color: rgb(52, 52, 52);
+    }
+    a:hover{
+        background: rgba(240, 255, 255, 0.89);
+        cursor: grab;
+        list-style-type: none;
+        text-decoration: none;
+        border: solid 5px red ;
+        font-weight: 700;
+        color: rgb(17, 17, 17);
+
     }
 
 
 
     table {
         padding: 30px;
-        width:100%;
-        border-collapse: collapse;
+        /*width:100%;*/
+        /*border-collapse: collapse;*/
         font-weight:800;
         font-size: 20px;
         justify-content: center;
@@ -66,9 +99,10 @@
 <br>
 <h2>交易策略</h2>
 <img src="img/webp/webp006.webp"  width="1000" height="400" alt="">
-<p>基於黃金交叉與死亡交叉原理的趨勢追蹤策略<br>主要概念是利用短期移動平均線（如5天、20天）和<br>長期移動平均線（如60天、120天）之間的交叉點來做出買入和賣出的決策。</p>
+<p>基於黃金交叉與死亡交叉和日內波趨勢追蹤策略<br>主要概念是利用短期移動平均線（如5天、20天）和<br>長期移動平均線（如60天、120天）之間的交叉點來做出買入和賣出的決策</p>
 <br>
-
+<br>
+<a href="https://www.wealth.com.tw/articles/76909f5c-4b1a-44d0-9a44-0e5921dea31b" >日內波</a>
 <br>
 <br>
 <table>
@@ -147,7 +181,59 @@
 <img src="img/webp/webp003.webp" width="1000" height="500" alt="">
 <img src="img/webp/webp005.webp" width="1000" height="500" alt="">
 <p>安裝程式需要用到的套件相關</p>
+<br>
+<br>
+<table>
+    <tr>
+        <th>套件名稱</th>
+        <th>功能用途</th>
+    </tr>
+    <tr>
+        <td>yfinance</td>
+        <td>用於下載歷史金融數據。</td>
+    </tr>
+    <tr>
+        <td>pandas</td>
+        <td>用於數據操作和分析。</td>
+    </tr>
+    <tr>
+        <td>numpy</td>
+        <td>用於數值計算。</td>
+    </tr>
+    <tr>
+        <td>plotly</td>
+        <td>用於交互式繪圖。</td>
+    </tr>
+    <tr>
+        <td>scikit-learn</td>
+        <td>用於機器學習模型和數據預處理，包括建立隨機森林模型。</td>
+    </tr>
+    <tr>
+        <td>alpaca-trade-api</td>
+        <td>用於與 Alpaca 交易 API 進行交互。</td>
+    </tr>
+    <tr>
+        <td>tensorflow</td>
+        <td>用於構建和訓練神經網絡模型。</td>
+    </tr>
+</table>
+<br>
+<br>
 <img src="img/webp/webp004.webp" width="1000" height="500" alt="">
+<p>複製程式碼到IDE裡</p>
+<img src="img/webp/webp007.webp" width="1000" height="500" alt="">
+
+<img src="img/webp/webp008.webp" width="1000" height="500" alt="">
+<p>導入訓練模型</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 
 
 

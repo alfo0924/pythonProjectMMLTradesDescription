@@ -63,7 +63,7 @@
         padding: 30px;
         /*width:100%;*/
         /*border-collapse: collapse;*/
-        font-weight:800;
+
         font-size: 20px;
         justify-content: center;
         align-content: center;
@@ -76,6 +76,11 @@
     }
     th {
         background-color: #f2f2f2;
+    }
+    table :hover{
+
+        border: solid 5px rgb(243, 2, 2);
+        font-weight: 700;
     }
 
 
@@ -138,32 +143,32 @@
     </tr>
     <tr>
         <td>支持向量機（SVM）</td>
-        <td>SVM 是一種監督式學習模型，可以用於分類和回歸任務。</td>
+        <td>支持向量機 (SVM) 是一種監督式學習模型，可以用於分類和回歸任務。</td>
         <td>預測日內波的方向或幅度。</td>
     </tr>
     <tr>
         <td>隨機森林（Random Forest）</td>
-        <td>隨機森林是一種集成學習算法，結合了多個決策樹，可用於分類和回歸。</td>
+        <td>隨機森林 (RF) 是一種集成學習算法，結合了多個決策樹，可用於分類和回歸。</td>
         <td>對於複雜的非線性關係表現良好。</td>
     </tr>
     <tr>
         <td>深度神經網絡（DNN）</td>
-        <td>DNN 是一種深度學習模型，具有很強的擬合能力和對於非線性關係的表徵能力。</td>
+        <td>深度神經網絡（DNN）是一種深度學習模型，具有很強的擬合能力和對於非線性關係的表徵能力。</td>
         <td>捕捉日內波的複雜模式。</td>
     </tr>
     <tr>
         <td>長短期記憶網絡（LSTM）</td>
-        <td>LSTM 是一種循環神經網絡的變體，特別適合處理時間序列數據。</td>
+        <td>長短期記憶網絡（LSTM) 是一種循環神經網絡的變體，特別適合處理時間序列數據。</td>
         <td>如果日內波具有時間相依性，LSTM 可能是一個很好的選擇。</td>
     </tr>
     <tr>
         <td>卷積神經網絡（CNN）</td>
-        <td>CNN 通常用於圖像處理，但對具有局部相關性的時間序列數據，如天氣預測或股票市場中的技術指標，也可以取得不錯的效果。</td>
+        <td>卷積神經網絡（CNN）通常用於圖像處理，但對具有局部相關性的時間序列數據，如天氣預測或股票市場中的技術指標，也可以取得不錯的效果。</td>
         <td>處理具有局部相關性的序列數據。</td>
     </tr>
     <tr>
         <td>遞歸神經網絡（RNN）</td>
-        <td>除了LSTM外，一般的RNN也可以應用於時間序列數據。它的結構比較簡單，訓練速度較快，但對於長期依賴關係的捕捉能力稍遜於LSTM。</td>
+        <td>除了長短期記憶網絡（LSTM) 外，一般的 遞歸神經網絡（RNN）也可以應用於時間序列數據。它的結構比較簡單，訓練速度較快，但對於長期依賴關係的捕捉能力稍遜於LSTM。</td>
         <td>處理時間序列數據，尤其是長期依賴關係的捕捉。</td>
     </tr>
 </table>
@@ -183,40 +188,51 @@
 <p>安裝程式需要用到的套件相關</p>
 <br>
 <br>
+
 <table>
     <tr>
         <th>套件名稱</th>
         <th>功能用途</th>
+        <th>Pip 安裝指令</th> <!-- 新增的列 -->
     </tr>
     <tr>
         <td>yfinance</td>
         <td>用於下載歷史金融數據。</td>
+        <td>pip install yfinance</td>
     </tr>
     <tr>
         <td>pandas</td>
         <td>用於數據操作和分析。</td>
+        <td>pip install pandas</td>
     </tr>
     <tr>
         <td>numpy</td>
         <td>用於數值計算。</td>
+        <td>pip install numpy</td>
     </tr>
     <tr>
         <td>plotly</td>
         <td>用於交互式繪圖。</td>
+        <td>pip install plotly</td>
     </tr>
     <tr>
         <td>scikit-learn</td>
         <td>用於機器學習模型和數據預處理，包括建立隨機森林模型。</td>
+        <td>pip install scikit-learn</td>
     </tr>
     <tr>
         <td>alpaca-trade-api</td>
         <td>用於與 Alpaca 交易 API 進行交互。</td>
+        <td>pip install alpaca-trade-api</td>
     </tr>
     <tr>
         <td>tensorflow</td>
         <td>用於構建和訓練神經網絡模型。</td>
+        <td>pip install tensorflow</td>
     </tr>
 </table>
+
+
 <br>
 <br>
 <img src="img/webp/webp004.webp" width="1000" height="500" alt="">

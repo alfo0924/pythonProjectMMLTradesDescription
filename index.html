@@ -13,7 +13,6 @@
         align-items: center;
         align-content: center;
 
-
         color:rgba(17,17,17);
         font-size: 20px;
         flex-grow: 10;
@@ -63,7 +62,7 @@
         padding: 30px;
         /*width:100%;*/
         /*border-collapse: collapse;*/
-
+        text-align: center;
         font-size: 20px;
         justify-content: center;
         align-content: center;
@@ -71,16 +70,17 @@
     }
     th, td {
         padding: 8px;
-        text-align: left;
         border-bottom: 1px solid #ddd;
     }
     th {
+
         background-color: #f2f2f2;
     }
     table :hover{
 
         border: solid 5px rgb(243, 2, 2);
         font-weight: 700;
+
     }
 
 
@@ -252,6 +252,57 @@
 <p>執行結果</p>
 <br>
 <br>
+<h2>各收益比較</h2>
+<table>
+    <tr>
+        <th>方法</th>
+        <th>比特幣BTC-USD</th>
+        <th>黃金GOLD</th>
+        <th>台積電2330</th>
+    </tr>
+    <tr>
+        <td>移動平均</td>
+        <td>104.19%</td>
+        <td>1.39%</td>
+        <td>1.21%</td>
+    </tr>
+    <tr>
+        <td>捲積神經網路CNN</td>
+        <td>34662326589080%</td>
+        <td>367700.44%</td>
+        <td>23565.24%</td>
+    </tr>
+    <tr>
+        <td>深度神經網路DNN</td>
+        <td>3.28%</td>
+        <td>1%</td>
+        <td>1%</td>
+    </tr>
+    <tr>
+        <td>長短期記憶網路LSTM</td>
+        <td>1%</td>
+        <td>1%</td>
+        <td>1%</td>
+    </tr>
+    <tr>
+        <td>隨機森林RF</td>
+        <td>3444098470884080345881737370271744%</td>
+        <td>96593950224196704%</td>
+        <td>94649417192.90%</td>
+    </tr>
+    <tr>
+        <td>遞歸神經網絡RNN</td>
+        <td>1.86%</td>
+        <td>1.04%</td>
+        <td>1.27%</td>
+    </tr>
+    <tr>
+        <td>支持向量機SVM</td>
+        <td>120.8%</td>
+        <td>1.39%</td>
+        <td>1.21%</td>
+    </tr>
+</table>
 <br>
 <br>
 <br>

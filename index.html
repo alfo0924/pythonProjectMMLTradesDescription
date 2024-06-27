@@ -65,7 +65,7 @@
     table {
         margin: auto;
         /*set the table to center/middle*/
-        padding: 30px;
+        padding: 25px;
         /*width:100%;*/
         /*border-collapse: collapse;*/
         text-align: center;
@@ -73,6 +73,7 @@
         justify-content: center;
         align-content: center;
         align-items: center;
+        flex-grow: 5;
     }
     th, td {
         padding: 8px;
@@ -88,10 +89,13 @@
         font-weight: 700;
 
         transition: background-color 0.8s ease-in-out ;
+        flex-grow: 5;
     }
     table th,td:hover
     {
-        transition: 0.2s ;
+        background-color: rgba(255, 255, 255, 0.58);
+        transition: 0.8s ease-in-out ;
+        border-radius: 2%;
 
     }
 
@@ -447,7 +451,7 @@
         <th>SVM + 移動平均線</th>
     </tr>
     <tr>
-        <td rowspan="4">ma 01 - 策略移動平均法 (日內波)</td>
+        <td rowspan="4">日內波<br>移動平均法</td>
         <td>比特幣</td>
         <td>110.84 %</td>
         <td>40126310277474.74 %</td>
@@ -488,7 +492,7 @@
         <td>2.88 %</td>
     </tr>
     <tr>
-        <td rowspan="4">ma 012 - 策略移動平均法 (波段)</td>
+        <td rowspan="4"> 波段<br>移動平均法</td>
         <td>比特幣</td>
         <td>4.17 %</td>
         <td>1790775665.95 %</td>
@@ -529,7 +533,7 @@
         <td>100.71 %</td>
     </tr>
     <tr>
-        <td rowspan="4">gma 02 - 葛蘭碧8大法則 (日內波)</td>
+        <td rowspan="4"> 日內波<br>葛蘭碧8大法則</td>
         <td>比特幣</td>
         <td>100.28 %</td>
         <td>10815.66 %</td>
@@ -570,7 +574,7 @@
         <td>2.96 %</td>
     </tr>
     <tr>
-        <td rowspan="4">gma 022 - 葛蘭碧8大法則 (波段)</td>
+        <td rowspan="4">波段<br>葛蘭碧8大法則 </td>
         <td>比特幣</td>
         <td>3.14 %</td>
         <td>1.64 %</td>
@@ -611,9 +615,20 @@
         <td>10356.76 %</td>
     </tr>
     <tr>
-        <td rowspan="4">nma 03 - 無任何交易策略 (日內波)</td>
+        <th>策略</th>
+        <th>商品</th>
+        <th>無設置交易策略</th>
+        <th>CNN </th>
+        <th>DNN </th>
+        <th>LSTM </th>
+        <th>RF </th>
+        <th>RNN </th>
+        <th>SVM </th>
+    </tr>
+    <tr>
+        <td rowspan="4">日內波<br>無任何交易策略 </td>
         <td>比特幣</td>
-        <td>null %</td>
+        <td>null </td>
         <td>1.83 %</td>
         <td>2.23 %</td>
         <td>2.37 %</td>
@@ -623,7 +638,7 @@
     </tr>
     <tr>
         <td>黃金</td>
-        <td>null %</td>
+        <td>null </td>
         <td>1.08 %</td>
         <td>1.39 %</td>
         <td>0.95 %</td>
@@ -633,7 +648,7 @@
     </tr>
     <tr>
         <td>聯發科</td>
-        <td>null %</td>
+        <td>null </td>
         <td>0.77 %</td>
         <td>2.34 %</td>
         <td>1.0 %</td>
@@ -643,7 +658,7 @@
     </tr>
     <tr>
         <td>台積電</td>
-        <td>null %</td>
+        <td>null </td>
         <td>1.21 %</td>
         <td>0.97 %</td>
         <td>1.0 %</td>
@@ -652,9 +667,9 @@
         <td>0.45 %</td>
     </tr>
     <tr>
-        <td rowspan="4">nma 032 - 無任何交易策略 (波段)</td>
+        <td rowspan="4">波段<br>無任何交易策略 </td>
         <td>比特幣</td>
-        <td>null %</td>
+        <td>null </td>
         <td>1.78 %</td>
         <td>0.87 %</td>
         <td>0.98 %</td>
@@ -664,7 +679,7 @@
     </tr>
     <tr>
         <td>黃金</td>
-        <td>null %</td>
+        <td>null </td>
         <td>0.92 %</td>
         <td>0.97 %</td>
         <td>0.94 %</td>
@@ -674,7 +689,7 @@
     </tr>
     <tr>
         <td>聯發科</td>
-        <td>null %</td>
+        <td>null </td>
         <td>0.98 %</td>
         <td>0.99 %</td>
         <td>1.00 %</td>
@@ -684,7 +699,7 @@
     </tr>
     <tr>
         <td>台積電</td>
-        <td>null %</td>
+        <td>null </td>
         <td>1.05 %</td>
         <td>1.00 %</td>
         <td>1.00 %</td>
